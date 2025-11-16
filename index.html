@@ -3,49 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohammed Allehyani - Professional CV</title>
+<title>Mohammed Allehyani - Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-/* Reset & base */
+/* Reset & Base */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Inter', sans-serif; background: #f4f4f9; color: #333; line-height: 1.6; }
-a { color: #0366d6; text-decoration: none; }
+body { font-family: 'Inter', sans-serif; background: #121212; color: #e0e0e0; line-height: 1.6; }
+a { color: #1e90ff; text-decoration: none; }
 a:hover { text-decoration: underline; }
+img { max-width: 100%; border-radius: 8px; }
 
 /* Container */
-.container { max-width: 950px; margin: 30px auto; padding: 20px; }
+.container { max-width: 1000px; margin: auto; padding: 20px; }
 
 /* Header */
-header { text-align: center; margin-bottom: 40px; }
-header h1 { font-size: 2.5em; margin-bottom: 5px; color: #1a1a1a; }
-header p { color: #555; margin-bottom: 15px; font-size: 1.1em; }
+header { text-align: center; margin-bottom: 50px; }
+header h1 { font-size: 2.8em; margin-bottom: 5px; }
+header p { color: #bbbbbb; margin-bottom: 15px; font-size: 1.1em; }
 .contact-buttons a {
-  display: inline-block; margin: 5px; padding: 10px 18px; background: #0366d6; color: #fff;
+  display: inline-block; margin: 5px; padding: 10px 20px; background: #1e90ff; color: #fff;
   border-radius: 5px; font-weight: 600; transition: 0.3s;
 }
-.contact-buttons a:hover { background: #024f9d; }
+.contact-buttons a:hover { background: #1a75d1; }
 
 /* Sections */
-section { background: #fff; padding: 25px 30px; margin-bottom: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-section h2 { font-size: 1.6em; color: #0366d6; margin-bottom: 15px; border-left: 5px solid #0366d6; padding-left: 10px; }
-ul { margin-left: 20px; }
-li { margin-bottom: 8px; }
+section { margin-bottom: 40px; }
+section h2 { font-size: 1.8em; color: #1e90ff; margin-bottom: 20px; border-left: 5px solid #1e90ff; padding-left: 10px; }
+
+/* Card Layout */
+.card { background: #1e1e1e; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; gap: 20px; flex-wrap: wrap; }
+.card img { width: 150px; height: 150px; object-fit: cover; }
+.card-content { flex: 1; min-width: 250px; }
 
 /* Skills badges */
 .skills span {
-  display: inline-block; background: #e1e4e8; color: #1a1a1a; padding: 6px 12px; margin: 5px;
+  display: inline-block; background: #333333; color: #e0e0e0; padding: 6px 12px; margin: 5px;
   border-radius: 5px; font-size: 0.9em;
 }
 
-/* Cards for experience/projects */
-.card { background: #f9f9f9; padding: 15px 20px; border-left: 4px solid #0366d6; margin-bottom: 15px; border-radius: 6px; }
-
 /* Footer */
-footer { text-align: center; font-size: 0.9em; color: #555; padding: 20px; margin-top: 30px; }
+footer { text-align: center; font-size: 0.9em; color: #aaaaaa; padding: 20px; }
 
 /* Responsive */
-@media(max-width: 600px) {
-  .contact-buttons a { display: block; width: 100%; margin-bottom: 10px; text-align: center; }
+@media(max-width: 768px) {
+  .card { flex-direction: column; align-items: center; text-align: center; }
+  .card img { width: 100%; height: auto; }
 }
 </style>
 </head>
@@ -67,43 +69,38 @@ footer { text-align: center; font-size: 0.9em; color: #555; padding: 20px; margi
   <!-- Summary -->
   <section>
     <h2>Summary</h2>
-    <p>Information Technology graduate specializing in networking, system administration, cybersecurity, and IT support. Experienced in configuring and maintaining Linux, Windows, and macOS environments with strong programming ability in Python, Java, C#, PHP, and SQL. Certified Penetration Tester (eJPT, eCPPT) with hands-on experience in troubleshooting, network management, virtualization, and web security testing. Passionate about system reliability, cyber defense, and innovative IT solutions.</p>
-  </section>
-
-  <!-- Experience -->
-  <section>
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>IT Intern — STC (Saudi Telecom Company) | 06/2024 – 07/2024 | Jeddah</h3>
-      <ul>
-        <li>Assisted in network configuration, device setup, and troubleshooting of routers, switches, and firewalls.</li>
-        <li>Supported system monitoring, helpdesk operations, and IT maintenance for enterprise users.</li>
-        <li>Observed fiber installation, network testing, and performance validation procedures.</li>
-        <li>Documented network configuration steps and created internal knowledge-base articles.</li>
-        <li>Recorded incident findings and optimized troubleshooting protocols to improve efficiency.</li>
-        <li><strong>Key Tools:</strong> Cisco, Wireshark, Nmap, VMware, Windows Server, Linux (Ubuntu/Kali)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section>
-    <h2>Education</h2>
-    <p>Bachelor of Computer Science - Information Technology, Islamic University of Madinah | 07/2020 – 06/2025</p>
+    <p>Information Technology graduate specializing in networking, system administration, cybersecurity, and IT support. Experienced in Linux, Windows, macOS, and programming with Python, Java, C#, PHP, and SQL. Certified Penetration Tester (eJPT, eCPPT) with hands-on experience in troubleshooting, network management, virtualization, and web security testing.</p>
   </section>
 
   <!-- Skills -->
   <section>
     <h2>Skills</h2>
     <div class="skills">
-      <span>Linux</span><span>Windows Server/Client</span><span>macOS</span>
-      <span>Networking</span><span>Routers/Switches/Firewalls</span><span>TCP/IP, DNS, DHCP</span>
-      <span>VLANs, Wi-Fi Optimization</span><span>Penetration Testing</span>
-      <span>Wireshark</span><span>Burp Suite</span><span>Metasploit</span>
+      <span>Linux</span><span>Windows</span><span>macOS</span>
+      <span>Networking</span><span>Routers/Switches</span><span>TCP/IP</span>
+      <span>VLANs</span><span>Penetration Testing</span><span>Wireshark</span>
       <span>Python</span><span>Java</span><span>C#</span><span>PHP</span>
-      <span>SQL/MySQL</span><span>HTML/CSS</span><span>Dart (Flutter)</span>
+      <span>SQL</span><span>HTML/CSS</span><span>Dart (Flutter)</span>
       <span>RESTful APIs</span><span>Git & GitHub</span><span>Active Directory</span>
       <span>Problem Solving</span><span>Teamwork</span><span>Analytical Thinking</span>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="STC Logo">
+      <div class="card-content">
+        <h3>IT Intern — STC (Saudi Telecom Company) | 06/2024 – 07/2024 | Jeddah</h3>
+        <ul>
+          <li>Network configuration, device setup, and troubleshooting of routers, switches, and firewalls.</li>
+          <li>System monitoring, helpdesk operations, and IT maintenance for enterprise users.</li>
+          <li>Observed fiber installation, network testing, and performance validation procedures.</li>
+          <li>Documented configuration steps and created knowledge-base articles.</li>
+          <li><strong>Tools:</strong> Cisco, Wireshark, Nmap, VMware, Windows Server, Linux (Ubuntu/Kali)</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -111,31 +108,39 @@ footer { text-align: center; font-size: 0.9em; color: #555; padding: 20px; margi
   <section>
     <h2>Projects</h2>
     <div class="card">
-      <h3>Online Desert Camping Rental Platform — Graduation Project | 05/2024 – 05/2025</h3>
-      <ul>
-        <li>Developed a full-stack web application using PHP, MySQL, HTML, CSS, and JavaScript.</li>
-        <li>Implemented real-time booking, user reviews, and loyalty features using Agile methodology.</li>
-        <li>Focused on web application security, database optimization, and RESTful API integration.</li>
-      </ul>
+      <img src="https://via.placeholder.com/150" alt="Online Desert Camping Platform">
+      <div class="card-content">
+        <h3>Online Desert Camping Rental Platform — Graduation Project | 05/2024 – 05/2025</h3>
+        <ul>
+          <li>Full-stack web application using PHP, MySQL, HTML, CSS, JavaScript.</li>
+          <li>Real-time booking, user reviews, and loyalty features using Agile methodology.</li>
+          <li>Focused on web application security, database optimization, RESTful API integration.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- Certifications & Awards -->
+  <!-- Certifications -->
   <section>
     <h2>Certifications & Awards</h2>
-    <ul>
-      <li>Security+ SYO-601 Prep — Netriders Academy, Aug 2025</li>
-      <li>eCPPT — eLearnSecurity, Dec 2022</li>
-      <li>eJPT — eLearnSecurity, Jul 2021</li>
-      <li>National Cybersecurity & Coding Competition (NCCC 2024) — 6th Place</li>
-    </ul>
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="eJPT Certification">
+      <div class="card-content">
+        <ul>
+          <li>eJPT — eLearnSecurity, Jul 2021</li>
+          <li>eCPPT — eLearnSecurity, Dec 2022</li>
+          <li>Security+ SYO-601 Prep — Netriders Academy, Aug 2025</li>
+          <li>National Cybersecurity & Coding Competition (NCCC 2024) — 6th Place</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     &copy; 2025 Mohammed Allehyani | <a href="https://github.com/M0DY3" target="_blank">GitHub</a>
   </footer>
-
 </div>
+
 </body>
 </html>
