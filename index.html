@@ -2,105 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed Allehyani - CV</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; line-height: 1.6; background: #f9f9f9; color: #333; }
-    h1, h2, h3 { color: #1a1a1a; }
-    a { color: #0366d6; text-decoration: none; }
+    /* Basic Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    a { text-decoration: none; color: #0366d6; }
     a:hover { text-decoration: underline; }
+
+    h1, h2, h3 { color: #1a1a1a; }
+
+    /* Container */
+    .container { max-width: 900px; margin: auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+    /* Header */
+    header { text-align: center; margin-bottom: 30px; }
+    header h1 { font-size: 2.2em; margin-bottom: 10px; }
+    .contact { margin-bottom: 20px; }
+    .contact a.button { display: inline-block; margin: 5px; padding: 8px 15px; background: #0366d6; color: #fff; border-radius: 5px; transition: 0.3s; }
+    .contact a.button:hover { background: #024f9d; }
+
+    /* Section styling */
     section { margin-bottom: 30px; }
-    ul { margin-left: 20px; }
-    .contact a { margin-right: 15px; }
-    .skills span { display: inline-block; background: #e1e4e8; padding: 5px 10px; margin: 3px; border-radius: 5px; font-size: 0.9em; }
+    section h2 { border-bottom: 2px solid #0366d6; padding-bottom: 5px; margin-bottom: 15px; font-size: 1.5em; }
+    ul { margin-left: 20px; margin-top: 10px; }
+    li { margin-bottom: 8px; }
+
+    /* Skills badges */
+    .skills span {
+      display: inline-block;
+      background: #e1e4e8;
+      color: #1a1a1a;
+      padding: 5px 10px;
+      margin: 4px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    /* Projects / Experience cards */
+    .card { background: #f9f9f9; padding: 15px 20px; border-left: 4px solid #0366d6; margin-bottom: 15px; border-radius: 5px; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contact a.button { display: block; width: 100%; text-align: center; margin-bottom: 10px; }
+    }
   </style>
 </head>
 <body>
-  <h1>Mohammed Allehyani</h1>
-  <p class="contact">
-    Jeddah, Saudi Arabia | 
-    <a href="mailto:moh9238mmoohh@gmail.com">moh9238mmoohh@gmail.com</a> | 
-    +966557883306 |
-    <a href="https://www.linkedin.com/in/mohammed-allehyani" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/M0DY3" target="_blank">GitHub</a>
-  </p>
+  <div class="container">
+    <header>
+      <h1>Mohammed Allehyani</h1>
+      <div class="contact">
+        <a href="mailto:moh9238mmoohh@gmail.com" class="button">Email</a>
+        <a href="https://www.linkedin.com/in/mohammed-allehyani" class="button" target="_blank">LinkedIn</a>
+        <a href="https://github.com/M0DY3" class="button" target="_blank">GitHub</a>
+      </div>
+      <p>Jeddah, Saudi Arabia | +966557883306</p>
+    </header>
 
-  <section>
-    <h2>Summary</h2>
-    <p>Information Technology graduate specializing in networking, system administration, cybersecurity, and IT support. Experienced in configuring and maintaining Linux, Windows, and macOS environments with strong programming skills in Python, Java, C#, PHP, and SQL. Certified Penetration Tester (eJPT, eCPPT) with hands-on experience in troubleshooting, network management, virtualization, and web security testing. Passionate about system reliability, cyber defense, and innovative IT solutions.</p>
-  </section>
+    <section>
+      <h2>Summary</h2>
+      <p>Information Technology graduate specializing in networking, system administration, cybersecurity, and IT support. Experienced in configuring and maintaining Linux, Windows, and macOS environments with strong programming skills in Python, Java, C#, PHP, and SQL. Certified Penetration Tester (eJPT, eCPPT) with hands-on experience in troubleshooting, network management, virtualization, and web security testing. Passionate about system reliability, cyber defense, and innovative IT solutions.</p>
+    </section>
 
-  <section>
-    <h2>Experience</h2>
-    <h3>IT Intern — STC (Saudi Telecom Company) | 06/2024 – 07/2024 | Jeddah</h3>
-    <ul>
-      <li>Assisted in network configuration, device setup, and troubleshooting of routers, switches, and firewalls.</li>
-      <li>Supported system monitoring, helpdesk operations, and IT maintenance for enterprise users.</li>
-      <li>Observed fiber installation, network testing, and performance validation procedures.</li>
-      <li>Documented network configuration steps and created internal knowledge-base articles.</li>
-      <li>Recorded incident findings and optimized troubleshooting protocols to improve future support efficiency.</li>
-      <li><strong>Key Tools:</strong> Cisco, Wireshark, Nmap, VMware, Windows Server, Linux (Ubuntu/Kali)</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>IT Intern — STC (Saudi Telecom Company) | 06/2024 – 07/2024 | Jeddah</h3>
+        <ul>
+          <li>Assisted in network configuration, device setup, and troubleshooting of routers, switches, and firewalls.</li>
+          <li>Supported system monitoring, helpdesk operations, and IT maintenance for enterprise users.</li>
+          <li>Observed fiber installation, network testing, and performance validation procedures.</li>
+          <li>Documented network configuration steps and created internal knowledge-base articles.</li>
+          <li>Recorded incident findings and optimized troubleshooting protocols to improve efficiency.</li>
+          <li><strong>Key Tools:</strong> Cisco, Wireshark, Nmap, VMware, Windows Server, Linux (Ubuntu/Kali)</li>
+        </ul>
+      </div>
+    </section>
 
-  <section>
-    <h2>Education</h2>
-    <p>Bachelor of Computer Science - Information Technology, Islamic University of Madinah (07/2020 – 06/2025) | Madinah</p>
-  </section>
+    <section>
+      <h2>Education</h2>
+      <p>Bachelor of Computer Science - Information Technology, Islamic University of Madinah | 07/2020 – 06/2025</p>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Linux</span>
-      <span>Windows</span>
-      <span>macOS</span>
-      <span>Penetration Testing</span>
-      <span>Network Analysis</span>
-      <span>Wireshark</span>
-      <span>Burp Suite</span>
-      <span>Metasploit</span>
-      <span>Active Directory</span>
-      <span>Python</span>
-      <span>Java</span>
-      <span>C#</span>
-      <span>PHP</span>
-      <span>SQL</span>
-      <span>HTML/CSS</span>
-      <span>Flutter/Dart</span>
-      <span>RESTful APIs</span>
-      <span>Git & GitHub</span>
-      <span>Problem Solving</span>
-      <span>Teamwork</span>
-    </div>
-  </section>
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Linux</span>
+        <span>Windows</span>
+        <span>macOS</span>
+        <span>Penetration Testing</span>
+        <span>Network Analysis</span>
+        <span>Wireshark</span>
+        <span>Burp Suite</span>
+        <span>Metasploit</span>
+        <span>Active Directory</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>C#</span>
+        <span>PHP</span>
+        <span>SQL</span>
+        <span>HTML/CSS</span>
+        <span>Flutter/Dart</span>
+        <span>RESTful APIs</span>
+        <span>Git & GitHub</span>
+        <span>Problem Solving</span>
+        <span>Teamwork</span>
+      </div>
+    </section>
 
-  <section>
-    <h2>Awards & Honors</h2>
-    <p><strong>National Cybersecurity & Coding Competition (NCCC 2024)</strong>, Imam Abdulrahman Bin Faisal University — 6th Place</p>
-    <ul>
-      <li>Competed in national CTF challenges focused on cybersecurity and programming.</li>
-      <li>Demonstrated strong teamwork, analytical skills, and applied cybersecurity knowledge.</li>
-      <li>Date: 01/12/2023</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Online Desert Camping Rental Platform — Graduation Project | 05/2024 – 05/2025</h3>
+        <ul>
+          <li>Developed a full-stack web application using PHP, MySQL, HTML, CSS, and JavaScript.</li>
+          <li>Implemented real-time booking, user reviews, and loyalty features using Agile methodology.</li>
+          <li>Focused on web application security, database optimization, and RESTful API integration.</li>
+        </ul>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <p><strong>Online Desert Camping Rental Platform — Graduation Project</strong>, Islamic University of Madinah | 05/2024 – 05/2025</p>
-    <ul>
-      <li>Developed a full-stack web application using PHP, MySQL, HTML, CSS, and JavaScript.</li>
-      <li>Implemented real-time booking, user reviews, and loyalty features using Agile methodology.</li>
-      <li>Focused on web application security, database optimization, and RESTful API integration.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Awards & Certifications</h2>
+      <ul>
+        <li>National Cybersecurity & Coding Competition (NCCC 2024) — 6th Place</li>
+        <li>Security+ SYO-601 Prep — Netriders Academy, Aug 2025</li>
+        <li>eCPPT — eLearnSecurity, Dec 2022</li>
+        <li>eJPT — eLearnSecurity, Jul 2021</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Security+ SYO-601 Prep — Netriders Academy, Aug 2025</li>
-      <li>eCPPT — eLearnSecurity, Dec 2022</li>
-      <li>eJPT — eLearnSecurity, Jul 2021</li>
-    </ul>
-  </section>
-
+  </div>
 </body>
 </html>
